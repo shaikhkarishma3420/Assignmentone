@@ -1,0 +1,39 @@
+package homewwork;
+
+import java.util.Scanner;
+
+public class empolyy {
+	String name;
+	int age;
+	String city;
+	String post;
+	double basic_salary;
+	public void acceptdetail() {
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Enter name");
+		name=sc.nextLine();
+		System.out.println("Enter age");
+		age=sc.nextInt();
+		sc.nextLine();
+		System.out.println("Enter city");
+		city=sc.nextLine();
+		System.out.println("Enter post");
+		post=sc.nextLine();
+		System.out.println("Enter basic_salary");
+		basic_salary=sc.nextDouble();
+		
+	}
+	public void disply() {
+		System.out.println(name);
+		System.out.println(age);
+		System.out.println(city);
+		System.out.println(post);
+		System.out.println(basic_salary);
+	}
+	public static void main(String[] args) {
+		empolyy e=new empolyy();
+		e.acceptdetail();
+		e.disply();
+	}
+	
+}
