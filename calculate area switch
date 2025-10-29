@@ -1,0 +1,68 @@
+package homewwork;
+
+import java.util.Scanner;
+
+public class switcharea {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner (System.in);
+		double radius,length,bredth,side,number;
+		System.out.println(" 1st Area of circle");
+		System.out.println(" 2nd Area of reactangular ");
+		System.out.println(" 3rd Area of circumfernce");
+		System.out.println("4th Area of square");
+		System.out.println("5th square of number");
+		System.out.println("6th cube of number");
+		System.out.println("Enter your choice");
+		
+		int choice=sc.nextInt();
+		switch (choice) {
+		case 1:
+			System.out.println("Enter radius of circle");
+			radius=sc.nextDouble();
+			double areacircle=3.14*radius*radius;
+			System.out.println("Area of circle" + areacircle);
+			break;
+		case 2:
+			System.out.println("Enter length of reactangle");
+			length=sc.nextDouble();
+			System.out.println("Enter breadth of reactangle");
+			bredth=sc.nextDouble();
+			double areareactangle=length*bredth;
+			System.out.println("Area of reavctnagle" + areareactangle);
+			break;
+		case 3:
+			System.out.println("Enter radius of circumference");
+			radius=sc.nextDouble();
+			double areacircumference=2*3.14*radius;
+			System.out.println("Area of circumference"+ areacircumference);
+			break;
+		case 4:
+			System.out.println("Enter side of squre");
+			side=sc.nextDouble();
+			double areasqure=side*side;
+			System.out.println("Area of squre"+ areasqure);
+			break;
+		case 5:
+			System.out.println("Enter a number");
+			number=sc.nextDouble();
+			double square=number*number;
+			System.out.println("Number of square" + square);
+			break;
+		case 6:
+			System.out.println("Enter number");
+			number=sc.nextDouble();
+			double cube=number*number*number;
+			System.out.println("Number of cube"+ cube);
+			break;
+			default:
+				System.out.println("Please Enter valid number");
+				
+			
+		}
+		
+		
+		}
+		
+	}
+
+
