@@ -1,0 +1,46 @@
+package homewwork;
+
+import java.util.Scanner;
+
+public class Bill {
+	String product_name;
+	int product_quantity;
+	double product_price;
+	double total_amount;
+	double final_amount;
+	double Discount;
+	
+	
+	public void accept() {
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Enter product name");
+	     product_name=sc.nextLine();
+		System.out.println("Enter product quantity");
+		int product_quantity=sc.nextInt();
+		System.out.println("Enter product price");
+	    product_price=sc.nextDouble();
+	    total_amount=product_quantity*product_price;
+		if(total_amount>1000) {
+			 Discount=(total_amount*5)/100;
+		}
+		else {
+			Discount=0;
+		}
+		 final_amount=total_amount-Discount;		
+		
+	}
+	public void disply() {
+		System.out.println("product_name "+product_name);
+		System.out.println("product_quantity "+product_quantity);
+		System.out.println("product_price "+product_price);
+		System.out.println("total_amount "+total_amount);
+	    System.out.println("Discount "+Discount);
+	    System.out.println("Final amount "+final_amount);
+	}
+	public static void main(String[] args) {
+		Bill B1=new Bill();
+		B1.accept();
+		B1.disply();
+	}
+
+}
