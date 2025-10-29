@@ -1,0 +1,64 @@
+package homewwork;
+
+import java.util.Scanner;
+
+public class Student {
+	String name;
+	String city;
+	String course_name;
+	int marks;
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter name");
+		String name=sc.nextLine();
+		System.out.println("Enter city");
+		String city=sc.nextLine();
+		System.out.println("Enter course name");
+		String course_name=sc.nextLine();
+		System.out.println("Enter 5 subject marks");
+		System.out.println("Subject 1 mark");
+		int S1=sc.nextInt();
+		System.out.println("Subject 2 mark");
+		int S2=sc.nextInt();
+		System.out.println("Subject 3 mark");
+		int S3=sc.nextInt();
+		System.out.println("Subject 4 mark ");
+		int S4=sc.nextInt();
+		System.out.println("Subject 5 mark");
+		int S5=sc.nextInt();
+		
+		
+		int total=0;
+	    total=S1+S2+S3+S4+S5;
+	    
+		double per=total/5;
+		
+		if(per>75) {
+			System.out.println("Grade  A ");	
+		}
+		else if(per>65) {
+			System.out.println("Grade   B");
+		}
+		else if(per>55) {
+			System.out.println("Grade    C");	
+		}
+		else {
+			System.out.println("Fail");
+		}
+		
+		System.out.println(name);
+		System.out.println(city);
+		System.out.println(course_name);
+		System.out.println(S1);
+		System.out.println(S2);
+		System.out.println(S3);
+		System.out.println(S4);
+		System.out.println(S5);
+		System.out.println("Total mark "+total);
+		System.out.println("Per "+per);
+		
+		 
+		
+	}
+
+}
