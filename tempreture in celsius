@@ -1,0 +1,14 @@
+package homewwork;
+
+import java.util.Scanner;
+
+public class fahrenheitocelsius {
+	public static void main(String[] args) {
+		System.out.println("Enter tempreture in fahrenhe");
+		Scanner sc=new Scanner(System.in);
+		double fahrenhe =sc.nextDouble();
+		double celsius =(fahrenhe-32)*5/9;
+		System.out.println("tempreture in celsius "+celsius);
+	}
+
+}
