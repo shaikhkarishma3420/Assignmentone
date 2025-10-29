@@ -1,0 +1,15 @@
+package homewwork;
+
+import java.util.Scanner;
+
+public class Celsiustofahrenh {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter tempreture in celsius");//45
+		double celsius=sc.nextDouble();
+		double fahrenheit=(celsius*9/5)+32;
+		System.out.println("Tempreture in fahrenheit "+fahrenheit);
+		
+	}
+
+}
