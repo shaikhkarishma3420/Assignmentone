@@ -1,0 +1,59 @@
+package homewwork;
+
+import java.util.Scanner;
+
+public class arithmatic {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int choice;
+		int a,b,add,sub,mul,div,mod;
+		System.out.println("1 Addition of number");
+		System.out.println("2 Substractoin of number");
+		System.out.println("3 Multiplication of number");
+		System.out.println("4 division of number");
+		System.out.println(" 5Module of number");
+		System.out.println("Enter your choice");
+		choice=sc.nextInt();
+		switch (choice) {
+		case 1:
+			System.out.println("Enter two number");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			add=a+b;
+			System.out.println("Addition " + add);
+			break;
+		case 2:
+			System.out.println("Enter two number");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			sub=a-b;
+			System.out.println("Substraction " + sub);
+			break;
+		case 3:
+			System.out.println("Enter two number");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			mul=a*b;
+			System.out.println("Multiplication " + mul);
+			break;
+		case 4:
+			System.out.println("Enter two number");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			div=a/b;
+			System.out.println("Division " + div);
+			break;
+		case 5:
+			System.out.println("Enter two number");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			mod=a%b;
+			System.out.println("Module " + mod);
+			break;
+			default:
+				System.out.println("Please enter valid number");
+		
+		}
+	}
+
+}
